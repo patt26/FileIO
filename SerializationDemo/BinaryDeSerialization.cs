@@ -12,7 +12,7 @@ namespace SerializationDemo
     {
         public void DeSerialization()
         {
-            System.IO.FileStream fileStream = new FileStream(@"/Example.txt", FileMode.Create);
+            System.IO.FileStream fileStream = new FileStream(@"C:\Users\prat\source\repos\FileIO\SerializationDemo\Example.txt", FileMode.Open);
             BinaryFormatter formatter = new BinaryFormatter();
             Demo deserializationdemo = (Demo)formatter.Deserialize(fileStream);
             Console.WriteLine($"Application name {deserializationdemo.ApplicationName} ---ApplicationId    {deserializationdemo.ApplicationId}");

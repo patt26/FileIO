@@ -10,6 +10,10 @@ namespace SerializationDemo
     {
         static void Main(string[] args)
         {
+            //BinarySerialization serial = new BinarySerialization();
+            //serial.Serialization();
+            BinaryDeSerialization deserial = new BinaryDeSerialization();
+            deserial.DeSerialization();
 
         }
     }
